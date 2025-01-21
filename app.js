@@ -32,3 +32,13 @@ function handleWordCount(){
   return numberOfWords;
 }
 
+
+clearBtn.addEventListener("click", () => {
+  textarea.value = '';
+  handleCharCount();
+  handleWordCount();
+  const numberOfWords = handleWordCount();
+  twitterLimitText.textContent = TWITTER_LIMIT - numberOfWords;
+  facebookLimitText.textContent = FACEBOOK_LIMIT - numberOfWords;
+})
+
