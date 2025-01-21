@@ -15,6 +15,8 @@ const FACEBOOK_LIMIT = 2200;
 textarea.addEventListener("input", (e) => {
   handleCharCount();
   const numberOfWords = handleWordCount();
+  twitterLimitText.textContent = TWITTER_LIMIT - numberOfWords;
+  facebookLimitText.textContent = FACEBOOK_LIMIT - numberOfWords;
 })
 
 
