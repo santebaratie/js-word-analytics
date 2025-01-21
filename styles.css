@@ -85,6 +85,12 @@ textarea {
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.card div:nth-child(2n){
+  border-left: none;
+  border-right: none;
 }
 
 div p {
