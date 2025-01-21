@@ -126,3 +126,14 @@ div p {
 main {
   position: relative;
 }
+
+@media screen and (max-width: 500px){
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card div:first-child {
+    grid-column: span 2;
+  }
+}
